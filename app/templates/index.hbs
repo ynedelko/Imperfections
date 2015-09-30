@@ -1,0 +1,7 @@
+<ul class='no-bull'>
+  {{#each model as |imperfection|}}
+    <li>{{imperfection.title}} at {{imperfection.location}}:
+      <p><img class="img-round" src="{{imperfection.image}}" alt="{{imperfection.title}}" /></p>
+    </li>
+  {{/each}}
+</ul>

@@ -1,0 +1,17 @@
+{ "imperfections": [{
+    "author": "Artist Dude",
+    "category": "thing",
+    "date": "34/35/2085",
+    "image": "http://img.photobucket.com/albums/v458/fakeanimosity/trollBridge04.jpg",
+    "location": "Secret Portland Bridge",
+    "title" : "I sit here and I look for the troll"
+
+  }, {
+    "author": "Artist Gal",
+    "category": "places",
+    "date": "13/45/4004",
+    "image": "http://www.ahomedesigns.us/wp-content/uploads/2011/11/Coffee-Shop-Design-2.jpg",
+    "location": "Coffee Shop on the NS side",
+    "title" : "Where am I?"
+  }]
+}
