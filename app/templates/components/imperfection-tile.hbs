@@ -1,5 +1,7 @@
 <ul class='no-bull'>
   <li>{{imperfection.title}} at {{imperfection.location}}:
   <p><img class="img-round" src="{{imperfection.image}}" alt="{{imperfection.title}}" /></p></li>
+
+  {{update-imperfection imperfection=imperfection updateImperfection="updateImperfection"}}
   <button class="btn btn-xs btn-success" {{action 'delete' imperfection}}>too perfect...delete!</button>
 </ul>
