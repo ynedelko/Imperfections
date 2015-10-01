@@ -37,9 +37,9 @@ button.btn-success {
 .detail-page {
   /*-webkit-align-content: center;
   align-all: center;*/
-  background-color: yellow;
+  background-color: rgba(45, 21, 87, 0.1);
   /*padding-left: 10%;*/
   text-align: center;
   font-family: futura;
-  text-shadow: 2px 1px 10px #B85C80 ;
+  text-shadow: 2px 1px 10px rgba(45, 21, 87, 1.0);
 }

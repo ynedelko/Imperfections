@@ -1,6 +1,7 @@
 
-  <li>{{#link-to 'imperfection' imperfection.id}}{{imperfection.title}}{{/link-to}} at {{imperfection.location}}:
-  <p><img class="img-round" src="{{imperfection.image}}" alt="{{imperfection.title}}" /></p></li>
+  <li><h4>{{imperfection.title}}</h4>
+    <p>{{#link-to 'imperfection' imperfection.id}}<img class="img-round" src="{{imperfection.image}}" alt="{{imperfection.title}}" />{{/link-to}}</p>
+  </li>
 
-  {{update-imperfection imperfection=imperfection updateImperfection="updateImperfection"}}
-  <button class="btn btn-xs btn-success" {{action 'delete' imperfection}}>too perfect...delete!</button>
+  <!-- {{update-imperfection imperfection=imperfection updateImperfection="updateImperfection"}} -->
+  <!-- <button class="btn btn-xs btn-success" {{action 'delete' imperfection}}>too perfect...delete!</button> -->
