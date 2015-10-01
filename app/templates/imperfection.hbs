@@ -4,3 +4,13 @@
 
 {{update-imperfection imperfection=model updateImperfection="updateImperfection"}}
 <button class="btn btn-xs btn-success" {{action 'delete' imperfection}}>too perfect...delete!</button>
+
+<h2>Thoughts</h2>
+<ul class='no-bull'>
+  {{#each model.thoughts as |thought|}}
+    <p>{{thought.name}}</p>
+    <p>{{thought.body}}</p>
+  {{/each}}
+</ul>
+
+{{add-thought saveThought="saveThought" imperfection=model}}

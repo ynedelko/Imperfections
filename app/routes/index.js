@@ -2,7 +2,10 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.store.findAll('imperfection');
+    return Ember.RSVP.hash({
+      imperfections: this.store.findAll('imperfection'),
+      thoughts: this.store.findAll('thought')
+    });
   },
 
   actions: {

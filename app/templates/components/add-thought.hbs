@@ -1,0 +1,23 @@
+{{#if addNewThought}}
+  <h1>What's on your imperfect Mind?</h1>
+  <form class="form-horizontal" id="" action="" method="">
+    <fieldset>
+      <legend>Thoughts</legend>
+      <div class="form-group">
+        <label for="name" class='col-lg-2 control-label'>Name</label>
+        <div class="col-lg-10">
+         {{input value=name id="name" class="form-control" placeholder="Curious George"}}
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="body" class="col-lg-2 control-label">ThouGht:</label>
+        <div class="col-lg-10">
+          {{textarea input value=body id="body" cols="80" rows="6" class="form-control" placeholder="OOh, OOh, ahh, ahh... ting tang wallla walla bing bang"}}
+        </div>
+      </div>
+      <button class="btn btn-default" {{action 'saveThought'}}>Imperfect... Save it!</button>
+    </fieldset>
+  </form>
+{{else}}
+  <button class="btn btn-info" {{action 'showNewThoughtForm'}}>Add new Thought</button>
+{{/if}}

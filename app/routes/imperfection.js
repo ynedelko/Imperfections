@@ -18,6 +18,17 @@ export default Ember.Route.extend({
     destroyImperfection(imperfection) {
       imperfection.destroyRecord();
       this.transitionTo('imperfection');
+    },
+
+    saveThought(params) {
+      var newThought = this.store.createRecord('thought', params);
+      var imperfection = params.imperfection;
+      debugger;
+      imperfection.get('thoughts').addObject(newThought);
+      newThought.save().then(function() {
+        return imperfection.save();
+      });
+      this.transitionTo('imperfection', params.impefection);
     }
   }
 });

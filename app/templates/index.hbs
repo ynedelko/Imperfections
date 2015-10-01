@@ -1,3 +1,6 @@
-{{#each model as |imperfection|}}
-  {{imperfection-tile imperfection=imperfection updateImperfection="updateImperfection" destroyImperfection="destroyImperfection"}}
-{{/each}}
+<h2>Imperfections</h2>
+<ul class='no-bull'>
+  {{#each model.imperfections as |imperfection|}}
+    {{imperfection-tile imperfection=imperfection updateImperfection="updateImperfection" destroyImperfection="destroyImperfection"}}
+  {{/each}}
+</ul>
