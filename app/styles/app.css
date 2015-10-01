@@ -33,3 +33,13 @@ button.btn-success {
   color: #EFF9A6;
   border: darkgrey;
 }
+
+.detail-page {
+  /*-webkit-align-content: center;
+  align-all: center;*/
+  background-color: yellow;
+  /*padding-left: 10%;*/
+  text-align: center;
+  font-family: futura;
+  text-shadow: 2px 1px 10px #B85C80 ;
+}
