@@ -11,7 +11,7 @@ export default Ember.Component.extend({
       var params = {
         author: this.get('author'),
         category: this.get('category'),
-        date: this.get('date'),
+        date: Date.now(),
         image: this.get('image'),
         location: this.get('location'),
         title: this.get('title')
