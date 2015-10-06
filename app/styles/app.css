@@ -49,3 +49,8 @@ button.btn-success {
   font-family: futura;
   text-shadow: 2px 1px 10px rgba(45, 21, 87, 1.0);
 }
+
+.map-display {
+    height: 300px;
+    width: 300px;
+  }

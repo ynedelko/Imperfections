@@ -6,6 +6,8 @@ export default DS.Model.extend({
   date: DS.attr(),
   image: DS.attr(),
   location: DS.attr(),
+  latitude: DS.attr('number'),
+  longitude: DS.attr('number'),
   title: DS.attr(),
-  thoughts: DS.hasMany('thought', {async: true})  
+  thoughts: DS.hasMany('thought', {async: true})
 });

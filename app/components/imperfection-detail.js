@@ -14,6 +14,8 @@ export default Ember.Component.extend({
         date: this.get('date'),
         image: this.get('image'),
         location: this.get('location'),
+        latitude: this.get('latitude'),
+        longitude: this.get('longitude'),
         title: this.get('title')
       };
       this.set('updateImperfectionForm', false),
